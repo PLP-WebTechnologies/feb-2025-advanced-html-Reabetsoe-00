@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    table, th, td {
+      border:1px solid rgb(0, 0, 0);
+    }
+    </style>
+<body>
+    <h3>How To Fill In A Registration Form</h3>
+    <p>There are two methods of doing this: </p>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+      <br>
+
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="https://pixabay.com/music/build-up-scenes-cosmic-cradle-314706/" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+
+<p>Which method did you like?</p>
+<ol style="list-style-type: upper-roman;">
+    <li>Method 1</li>
+    <li>Method 2</li>
+</ol>
+
+
+    <form action="registration.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <label type="date">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <input type="checkbox" id="form" name="Registration" value="Registration">
+        <label for="vehicle1">I Have Finished Registering</label><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML Radio</label><br>
+
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+              </tr>
+              <tr>
+                <td>Samsung</td>
+                <td>South Korea</td>
+                <td>+112384952711</td>
+                <td>samsung@gmail.com</td>       
+            </tr>
+              <tr>
+                <td>Apple</td>
+                <td>United States</td>
+                <td>+9951317897934</td>
+                <td>apple@gmail.com</td>
+            </tr>
+        </table>
+
+
+            <h4>Here's A Random Photo</h4>
+            <img src="https://www.pexels.com/photo/close-up-photography-of-person-writing-on-white-paper-955392/" alt="A Person Filling In A Registration Form" width="200px" height="200px">
+    </body>
+</html>
